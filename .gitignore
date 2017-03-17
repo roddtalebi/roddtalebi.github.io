@@ -1,5 +1,5 @@
 #ignore d3 folder
-d3/
+#d3/
 
 #ignore anything in php
 .php

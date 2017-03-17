@@ -1,14 +1,11 @@
 <!--template from: https://v4-alpha.getbootstrap.com/getting-started/introduction/-->
-<!--HOW TO USE PHP AND HTML: http://www.apaddedcell.com/how-automatically-include-your-header-navigation-and-footer-every-page -->
 
-<!--define php input variables-->
 <!DOCTYPE html>
 <!--Bootstrap requires the use of the HTML5 doctype-->
 <html lang="en">
   <head>
     <title>"Home"</title>
     <meta http-equiv="description" content="Description of this page" />
-    <!--in index.php name title...$page_title = "Home" before including this header.php page-->
 
     <!-- Required meta tags -->
     <!--To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag-->
@@ -23,7 +20,7 @@
       /* Remove the navbar's default margin-bottom and rounded borders */ 
       .navbar {
         margin-bottom: 0;
-         border-radius: 0;
+        border-radius: 0;
       }
       /* Set black background color, white text and some padding */
       footer {
@@ -62,11 +59,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>                        
           </button>
-          <a class="navbar-brand" href="index.php">Home or Logo</a>
+          <a class="navbar-brand" href="index.html">Home or Logo</a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li><a href="index.php">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="https://calendar.google.com/calendar/embed?src=coach.roddtalebi%40gmail.com&ctz=America/New_York">Schedule</a></li>
             <li><a href="roster.html">Roster</a></li>
             <li class="dropdown">
@@ -109,10 +106,9 @@
         </div>
 
         <div class="col-sm-8 text-left" id="banner">
-          <p>Intro Banner Below</p>
           <!-- Page Header -->
           <!-- Set your background image for this header on the line below. -->
-          <header class="intro-header" style="background-image: url('img/about-bg.jpg')">
+          <header class="intro-header" style="background-image: url('images/rodd.jpg')">
               <div class="container">
                   <div class="row">
                       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -130,14 +126,14 @@
     </div>
 
     <!--google calendar embed-->
-    <div id="calendar">
+    <div class="container-fluid text-center" id="calendar">
       <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
 
     <!--weather-->
     <div id="weather">
       <h1 class="text-left">Today's Weather</h1>
-      <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src=" http://forecast.io/embed/#lat=34.0073&lon=-84.3435&name=GT Boathouse&color=#00aaff&font=Georgia&units=us12"></iframe>
+      <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=34.0073&lon=-84.3435&name=GT Boathouse&color=#00aaff&font=Georgia&units=us12"></iframe>
       <iframe height="1000" width="100%" src="https://darksky.net/forecast/34.0073,-84.3435/us12/en"></iframe>
     </div>
 
