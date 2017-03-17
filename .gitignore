@@ -1,0 +1,8 @@
+#ignore d3 folder
+d3/
+
+#ignore anything in php
+.php
+
+#ignore Other HTML folder where test files live
+Other HTML/
