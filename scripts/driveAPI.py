@@ -20,11 +20,11 @@ SCOPES = (
     ) # Read-only access to file content or metadata
 
 CLIENT_SECRET = (
-    "client_id.json"
+    "driveAPI/client_id.json"
     ) #file where creds are stored
 
 #security code
-store = file.Storage('storage.json')
+store = file.Storage('driveAPI/storage.json')
 creds = store.get()
 if not creds or creds.invalid:
     flags = argparse.ArgumentParser(parents=[tools.argparser]).parse_args()
