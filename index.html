@@ -4,126 +4,71 @@
 <!--Bootstrap requires the use of the HTML5 doctype-->
 <html lang="en">
   <head>
-    <title>"Home"</title>
+    <title>Home</title>
     <meta http-equiv="description" content="Description of this page" />
 
     <!-- Required meta tags -->
     <!--To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag-->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
     <!--keep the boostrap css first in CSS list-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/5dc3709a8c.js"></script>
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("navbar.html");
+      $("#footer-placeholder").load("footer.html")
+    });
+    </script>
+
     
     <style>
-      /* Remove the navbar's default margin-bottom and rounded borders */ 
-      .navbar {
-        margin-bottom: 0;
-        border-radius: 0;
+      #banner{
+      position:relative;
+        padding:0px;
       }
-      /* Set black background color, white text and some padding */
-      footer {
-        background-color: #555;
-        color: white;
-        padding: 15px;
+      img {
+      vertical-align:top;
+      display:block;
+      margin: 0 auto;
+      max-width:55%;
+      }
+      #bannerText{
         text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+        font-family: "aileronHI";
+        font-size: 500%;
       }
-      /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-      .row.content {height: 450px}
-      /* Set gray background color and 100% height */
-      .sidenav {
-        padding-top: 20px;
-        background-color: #f1f1f1;
-        height: 100%;}
-      /* On small screens, set height to 'auto' for sidenav and grid */
-      @media screen and (max-width: 767px) {
-        .sidenav {
-          height: auto;
-          padding: 15px;}
-        .row.content {height:auto;} 
+
+      #weather {
+        margin:0;
+        padding:75px;
+        font-family: "aileronH";
       }
+
     </style>
   </head>
 
 
   <body>
-    <!--navigation bar-->
-    <nav class="navbar navbar-inverse">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
-          </button>
-          <a class="navbar-brand" href="index.html">Home or Logo</a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="https://calendar.google.com/calendar/embed?src=coach.roddtalebi%40gmail.com&ctz=America/New_York">Schedule</a></li>
-            <li><a href="roster.html">Roster</a></li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Notes
-              <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Technique</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="https://www.youtube.com/user/roddtalebi/videos?sort=dd&view=0&shelf_id=0">Videos</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Lineups
-              <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="set_lineups.html">Builder</a></li>
-                <li><a href="lineups.html">Viewer</a></li>
-              </ul>
-            </li>
-            <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Forms
-              <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="https://goo.gl/forms/L93DAseGMMxa6FOn1">Attendance</a></li>
-                <li><a href="https://goo.gl/forms/pPRzitKxCSGad7Ot2">2k</a></li>
-              </ul>
-            </li>
-            <li><a href="https://drive.google.com/drive/folders/0BzmuweK8TzRGdENMdDJVTjNGN0E?usp=sharing">Data</a></li>
-            <li><a href="https://web.groupme.com/chats">GroupMe</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <!--end of Navigation bar-->
 
     <!--banner content-->
-    <div class="container-fluid text-center">    
-      <div class="row content">
-        <div class="col-sm-2 sidenav" id="sidebar">
-          <p>let's not put anything here</p>
-        </div>
 
-        <div class="col-sm-8 text-left" id="banner">
-          <!-- Page Header -->
-          <!-- Set your background image for this header on the line below. -->
-          <header class="intro-header" style="background-image: url('images/rodd.jpg')">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                          <div class="page-heading">
-                              <h1>Georgia Tech Crew</h1>
-                              <hr class="small">
-                              <span class="subheading">In Rodd We Trust.</span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </header>
-        </div>
+    <div id="banner">
+      <div id="bannerText">
+        In Rodd We Trust
       </div>
+      <img src="images/rodd.jpg" alt="banner" />
+      <div id="bannerText">Georgia Tech Womens Crew</div>
     </div>
+
 
     <!--google calendar embed-->
     <div class="container-fluid text-center" id="calendar">
@@ -133,22 +78,18 @@
     <!--weather-->
     <div id="weather">
       <h1 class="text-left">Today's Weather</h1>
-      <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=34.0073&lon=-84.3435&name=GT Boathouse&color=#00aaff&font=Georgia&units=us12"></iframe>
+      <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="https://forecast.io/embed/#lat=34.0073&lon=-84.3435&name=GT Boathouse&color=#00aaff&font=Georgia&units=us12"></iframe>
       <iframe height="1000" width="100%" src="https://darksky.net/forecast/34.0073,-84.3435/us12/en"></iframe>
     </div>
 
     <!--footer-->
-    <footer class="container-fluid text-center">
-      <p>Link to Instagram and GT Page Here</p>
-      <a href="#"><span class="glyphicon glyphicon-envelope"></span></a>
-      <a href="instagram.com"><i class="fa fa-instagram"></i></a>
-      <!--http://fontawesome.io/icons/#brand-->
-    </footer>
+    <div id="footer-placeholder"></div>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <!--keep them right before body closes-->
+    <!--keep them right before body closes--
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
   </body>
 </html>
