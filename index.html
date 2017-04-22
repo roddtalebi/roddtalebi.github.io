@@ -1,7 +1,4 @@
-<!--template from: https://v4-alpha.getbootstrap.com/getting-started/introduction/-->
-
 <!DOCTYPE html>
-<!--Bootstrap requires the use of the HTML5 doctype-->
 <html lang="en">
   <head>
     <title>Home</title>
@@ -12,44 +9,44 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
+    <!-- CSS -->
     <!--keep the boostrap css first in CSS list-->
     <link rel="stylesheet" type="text/css" href="mystyle.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/5dc3709a8c.js"></script>
+
+    <!-- Read in Nav + Footer js -->
     <script>
     $(function(){
       $("#nav-placeholder").load("navbar.html");
-      $("#footer-placeholder").load("footer.html")
-    });
+      $("#footer-placeholder").load("footer.html") });
     </script>
 
-    
+    <!-- Custom CSS -->
     <style>
+      /* for the banner image + text */
       #banner{
-      position:relative;
-        padding:0px;
-      }
+        position:relative;
+        padding:0px; }
       img {
-      vertical-align:top;
-      display:block;
-      margin: 0 auto;
-      max-width:55%;
-      }
+        vertical-align:top;
+        display:block;
+        margin: 0 auto;
+        max-width:55%; }
       #bannerText{
         text-align: center;
         font-family: "aileronHI";
-        font-size: 500%;
-      }
+        font-size: 500%; }
 
+      /* weather block */
       #weather {
         margin:0;
         padding:75px;
-        font-family: "aileronH";
-      }
-
+        font-family: "aileronH"; }
     </style>
   </head>
 
@@ -57,25 +54,20 @@
   <body>
     <!--Navigation bar-->
     <div id="nav-placeholder"></div>
-    <!--end of Navigation bar-->
 
     <!--banner content-->
-
     <div id="banner">
-      <div id="bannerText">
-        In Rodd We Trust
-      </div>
+      <div id="bannerText">In Rodd We Trust</div>
       <img src="images/rodd.jpg" alt="banner" />
       <div id="bannerText">Georgia Tech Womens Crew</div>
     </div>
 
-
-    <!--google calendar embed-->
+    <!-- google calendar -->
     <div class="container-fluid text-center" id="calendar">
       <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
 
-    <!--weather-->
+    <!-- weather -->
     <div id="weather">
       <h1 class="text-left">Today's Weather</h1>
       <iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="https://forecast.io/embed/#lat=34.0073&lon=-84.3435&name=GT Boathouse&color=#00aaff&font=Georgia&units=us12"></iframe>
@@ -85,11 +77,5 @@
     <!--footer-->
     <div id="footer-placeholder"></div>
 
-    <!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <!--keep them right before body closes--
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
   </body>
 </html>
