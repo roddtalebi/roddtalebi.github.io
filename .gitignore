@@ -1,5 +1,6 @@
 #ignore d3 folder
 #d3/
+scripts/driveAPI/
 
 #ignore anything in php
 .php
