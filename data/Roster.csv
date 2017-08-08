@@ -1,1 +1,23 @@
-Full Name,Goes By,Type,StatusName0,Allison,Starboard,OkName1,AnneBlair,Starboard,OkName2,Beth,Port,OkName 2,Courtney,Port,InjuredName3,Heyerdahl,Starboard,OkName4,Murray,Port,OkName5,Jo,BiPort,OkName6,Kaela,Starboard,OkName7,Kate,Starboard,OkName8,Kat,BiStar,OkName9,Kelly,Port,OkName10,Lulu,Port,OkName11,Mandy,Port,OkName12,Melanie,Port,InjuredName13,Boutom,Starboard,OkName14,Stacks,Port,OkName15,Renee,BiPort,OkName16,Tera,Port,OkName17,Blaine,Cox,AbsentName18,Sarah,Cox,OkName19,Steph,Cox,OkName20,Lopa,Cox,Ok
+Full Name,Goes By,Type,Status,Attendance Score,Last Updated
+Name0,Allison,Starboard,Ok,83,2017-08-07 19:55:50.433116
+Name1,AnneBlair,Starboard,Ok,66,2017-08-07 19:55:50.433116
+Name2,Beth,Port,Ok,66,2017-08-07 19:55:50.433116
+Name 2,Courtney,Port,Injured,100,2017-08-07 19:55:50.433116
+Name3,Heyerdahl,Starboard,Ok,100,2017-08-07 19:55:50.433116
+Name4,Murray,Port,Ok,83,2017-08-07 19:55:50.433116
+Name5,Jo,BiPort,Ok,83,2017-08-07 19:55:50.433116
+Name6,Kaela,Starboard,Ok,100,2017-08-07 19:55:50.433116
+Name7,Kate,Starboard,Ok,100,2017-08-07 19:55:50.433116
+Name8,Kat,BiStar,Ok,100,2017-08-07 19:55:50.433116
+Name9,Kelly,Port,Ok,100,2017-08-07 19:55:50.433116
+Name10,Lulu,Port,Ok,100,2017-08-07 19:55:50.433116
+Name11,Mandy,Port,Ok,100,2017-08-07 19:55:50.433116
+Name12,Melanie,Port,Injured,100,2017-08-07 19:55:50.433116
+Name13,Boutom,Starboard,Ok,100,2017-08-07 19:55:50.433116
+Name14,Stacks,Port,Ok,100,2017-08-07 19:55:50.433116
+Name15,Renee,BiPort,Ok,100,2017-08-07 19:55:50.433116
+Name16,Tera,Port,Ok,100,2017-08-07 19:55:50.433116
+Name17,Blaine,Cox,Absent,100,2017-08-07 19:55:50.433116
+Name18,Sarah,Cox,Ok,100,2017-08-07 19:55:50.433116
+Name19,Steph,Cox,Ok,100,2017-08-07 19:55:50.433116
+Name20,Lopa,Cox,Ok,100,2017-08-07 19:55:50.433116

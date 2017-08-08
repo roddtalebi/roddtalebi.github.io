@@ -21,6 +21,7 @@ roster['Last Updated'] = str(datetime.now())
 attendance = pd.read_csv('../data/Attendance_Cleaned.csv',header = 0)
 for name in names:
     score = attendance.mean(axis=1).loc[attendance['Name']==name].values[0]
+    print(name, score)
     roster['Attendance Score'].loc[roster['Full Name']==name] = int(score*100)
 
 # update absent
@@ -56,3 +57,14 @@ for name in injuredPpl:
 
 # save updated roster
 roster.to_csv('../data/Roster.csv', index=False)
+
+
+
+
+
+
+
+
+
+
+
