@@ -15,16 +15,18 @@ from apiclient import discovery
 from httplib2 import Http
 from oauth2client import file, client, tools
 
+home_dir = "/Users/Rodd/Desktop/websites/roddtalebi.github.io/scripts/"
+
 SCOPES = (
     "https://www.googleapis.com/auth/drive.readonly"
     ) # Read-only access to file content or metadata
 
 CLIENT_SECRET = (
-    "driveAPI/client_id.json"
+    home_dir + "driveAPI/client_id.json"
     ) #file where creds are stored
 
 #security code
-store = file.Storage('driveAPI/storage.json')
+store = file.Storage(home_dir + 'driveAPI/storage.json')
 creds = store.get()
 if not creds or creds.invalid:
     flags = argparse.ArgumentParser(parents=[tools.argparser]).parse_args()
@@ -48,7 +50,7 @@ files = DRIVE.files().list(
 # orderBy...^sorts files so that if there are duplicate files, it picks the most recently modified
 if files:
     # creates file name...'SHEETNAME.csv'
-    fn = '%s.csv' % os.path.splitext('../data/' + files[0]['name'].replace(' ', '_'))[0]
+    fn = '%s.csv' % os.path.splitext(home_dir + '../data/' + files[0]['name'].replace(' ', '_'))[0]
 
     print('Exporting "%s" as "%s"... ' % (files[0]['name'], fn), end='')
     data = DRIVE.files().export(fileId=files[0]['id'], mimeType=DST_MIMETYPE).execute()

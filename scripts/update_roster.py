@@ -7,8 +7,10 @@ from datetime import date, datetime, timedelta
 import pandas as pd
 import os.path
 
+home_dir = "/Users/Rodd/Desktop/websites/roddtalebi.github.io/scripts/"
+
 # load in roster
-roster = pd.read_csv('../data/Roster.csv',
+roster = pd.read_csv(home_dir + '../data/Roster.csv',
     header = 0)
 names = roster['Full Name'].tolist()
 roster['Attendance Score'] = 0
@@ -18,14 +20,14 @@ roster['Last Updated'] = str(datetime.now())
 
 # update attendance
 #note that attendance.csv pull and attendance_clean must have already been done
-attendance = pd.read_csv('../data/Attendance_Cleaned.csv',header = 0)
+attendance = pd.read_csv(home_dir + '../data/Attendance_Cleaned.csv',header = 0)
 for name in names:
     score = attendance.mean(axis=1).loc[attendance['Name']==name].values[0]
     print(name, score)
     roster['Attendance Score'].loc[roster['Full Name']==name] = int(score*100)
 
 # update absent
-absent = pd.read_csv('../data/Absence.csv',
+absent = pd.read_csv(home_dir + '../data/Absence.csv',
                      header = 0, #header is in first line
                      parse_dates = [0,2,3],
                      infer_datetime_format = True)
@@ -41,7 +43,7 @@ for name in absentPpl:
     roster['Status'].loc[roster['Full Name']==name] = 'Absent'
 
 # update injured
-injured = pd.read_csv('../data/Injury_Report.csv',
+injured = pd.read_csv(home_dir + '../data/Injury_Report.csv',
                      header = 0, #header is in first line
                      parse_dates = [0],
                      infer_datetime_format = True)
@@ -56,7 +58,7 @@ for name in injuredPpl:
     roster['Status'].loc[roster['Full Name']==name] = 'Injured'
 
 # save updated roster
-roster.to_csv('../data/Roster.csv', index=False)
+roster.to_csv(home_dir + '../data/Roster.csv', index=False)
 
 
 

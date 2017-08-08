@@ -4,8 +4,10 @@ from datetime import date, datetime
 import pandas as pd
 import os.path
 
+home_dir = "/Users/Rodd/Desktop/websites/roddtalebi.github.io/scripts/"
+
 # read in data to pandas df
-attendance = pd.read_csv('../data/Attendance.csv',
+attendance = pd.read_csv(home_dir + '../data/Attendance.csv',
     header = 0, #header is in first line
     parse_dates = [0],
     infer_datetime_format = True
@@ -16,12 +18,12 @@ attendance['Timestamp'] = attendance['Timestamp'].apply(lambda x: x.date())
 att = attendance.values.tolist()
 
 #read in names from roster
-roster = pd.read_csv('../data/Roster.csv',
+roster = pd.read_csv(home_dir + '../data/Roster.csv',
     header = 0) #header is in first line
 names = roster['Full Name'].tolist()
 
 #check if file exists
-cleaned = "../data/Attendance_Cleaned.csv"
+cleaned = home_dir + "../data/Attendance_Cleaned.csv"
 if os.path.isfile(cleaned): #file exists
     cleanedDF = pd.read_csv(cleaned,
         header = 0) #header is in first line
