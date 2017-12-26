@@ -1,7 +1,7 @@
 #ignore d3 folder
 #d3/
-scripts/driveAPI/
-scripts/cronjob/
+#scripts/driveAPI/
+#scripts/cronjob/
 
 #ignore anything in php
 .php
