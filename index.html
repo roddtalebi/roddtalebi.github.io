@@ -15,12 +15,11 @@
   <script src="https://use.fontawesome.com/5dc3709a8c.js"></script>
 
   <style>
-  body {
-      position: relative; 
-  }
-  #Work {padding-top:50px;padding-bottom:25px;}
-  #Rowing {padding-top:50px;padding-bottom:25px;}
-  #Projects {padding-top:50px;padding-bottom:25px;}
+
+  #Main {padding-top: 50px; padding-bottom: 25px; min-height: 650px;}
+  #Work {padding-top:50px; padding-bottom:25px;}
+  #Rowing {padding-top:50px; padding-bottom:25px;}
+  #Projects {padding-top:50px; padding-bottom:25px;}
 
   img {
     padding-top:50px;
@@ -29,11 +28,22 @@
     -webkit-filter: grayscale(90%);
     filter: grayscale(0%); /* make all photos black and white */ }
 
+  #list {
+    padding-left: 20px;
+  }
+
   body {
-      font: 400 15px/1.8 Lato, sans-serif;
+      position: relative;
+      font: 500 17px/1.5 Lato, sans-serif;
       color: #777;
   }
-  h3, h4 {
+
+  .black {
+    font-weight: bold;
+    color: #111;
+  }
+
+  h4 {
       margin: 10px 0 30px 0;
       letter-spacing: 3px;      
       font-size: 30px;
@@ -52,15 +62,8 @@
   .person:hover {
       border-color: #f1f1f1;
   }
-  .carousel-inner img {
-      -webkit-filter: grayscale(90%);
-      filter: grayscale(0%); /* make all photos black and white */ 
-      width: 100%; /* Set width to 100% */
-      margin: auto;
-  }
-  .carousel-caption h3 {
-      color: #fff !important;
-  }
+
+
   @media (max-width: 600px) {
     .carousel-caption {
       display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
@@ -70,7 +73,7 @@
       background: #2d2d30;
       color: #bdbdbd;
   }
-  .bg-1 h3 {color: #fff;}
+
   .bg-1 p {font-style: italic;}
   .list-group-item:first-child {
       border-top-right-radius: 0;
@@ -101,12 +104,7 @@
       background-color: #fff;
       color: #000;
   }
-  .modal-header, h4, .close {
-      background-color: #333;
-      color: #fff !important;
-      text-align: center;
-      font-size: 30px;
-  }
+
   .modal-header, .modal-body {
       padding: 40px 50px;
   }
@@ -198,14 +196,14 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="">RECRUITS</a>
+      <a class="navbar-brand" href="">RODD TALEBI</a>
     </div>
     <div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#Work">Work</a></li>
-          <li><a href="#Rowing">Rowing</a></li>
-          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Work">WORK</a></li>
+          <li><a href="#Rowing">ROWING</a></li>
+          <li><a href="#Projects">PROJECTS</a></li>
           <!--
           <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">JOIN US<span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -279,32 +277,64 @@
 
 
 
-
-
-
-
-
-
-
-
-<div id="Work" class="container-fluid" style="width:100%;">
-  <div class="col-md-6">
-    <h1>Work Header</h1>
-    <p>Words</p>
-  </div>
-  <div id="image" class="col-md-6">
+<div id="Main" class="container-fluid" style="width:100%;">
+  <div id="headshot" class="col-md-4">
     <center>
-    <img src="images/a.jpg">
+    <img src="images/headshot1.jpg" style="border-radius: 50%;">
     </center>
+  </div>
+  <div class="col-md-8">
+    <h1>
+      Hi I'm <span class="black">Rodd Talebi</span>.<br>
+      This is my website.<br>
+    </h1>
+    <div id='list'>
+      <span class="black">
+        <h3> -
+          Data Scientist -
+          Rowing Coach -
+          Technologist -
+        </h3>
+      </span>
+    </div>
+    <p>I guess I'll put a little 'welcome blurb' here and put a bit about myself. Then follow it up with a few relevant links</p>
+    <div id="list">
+      <p>
+        - <a href="https://drive.google.com/file/d/13CXotr0bksuylON_yZO_TRpR0_V2DA5D/view?usp=sharing" target="_blank">PDF Resume</a><br>
+        - <a href="http://linkedin.com/in/roddtalebi/" target="_blank">LinkedIn</a><br>
+        - <a href="http://github.com/roddtalebi/" target="_blank">GitHub</a><br>
+        - <a href="http://instagram.com/theoddrodd/" target="_blank">Instagram</a><br>
+      </p>
+    </div>
   </div>
 </div>
 
 
 
-<div id="Coaches" class="container-fluid">
+
+
+
+
+<div class="container-fluid" style="width:100%;">
+  <div id="Work">
+    <div class="col-md-6">
+      <h1>Work Header</h1>
+      <p>Words</p>
+    </div>
+    <div id="image" class="col-md-6">
+      <center>
+      <img src="images/RoddRickCole.jpg">
+      </center>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="Rowing" class="container-fluid">
   <div id="image" class="col-md-6">
     <center>
-    <img src="images/b.jpg">
+    <img src="images/rower.jpg">
     </center>
   </div>
 
