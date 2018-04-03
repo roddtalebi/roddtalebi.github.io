@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<!-- https://www.w3schools.com/bootstrap/tryit.asp?filename=trybs_theme_band_complete&stacked=h -->
+<html lang="en">
+<head>
+  <title>Work Experience</title>
+  <meta http-equiv="description" content="Bio Page for Rodd Talebi" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://use.fontawesome.com/5dc3709a8c.js"></script>
+
+  <style>
+
+  #GTRI {padding-top: 50px; padding-bottom: 25px; min-height: 650px;}
+  #NCR {padding-top:50px; padding-bottom:25px;}
+  #IHG {padding-top:50px; padding-bottom:25px;}
+  #After6 {padding-top:50px; padding-bottom:25px;}
+  #CityHall {padding-top:50px; padding-bottom:25px;}
+  #Asteroid {padding-top:50px; padding-bottom:25px;}
+
+  img {
+    padding-top:50px;
+    width: 100%;
+    height: auto;
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(0%); /* make all photos black and white */ }
+
+  #list {
+    padding-left: 20px;
+  }
+
+  body {
+      position: relative;
+      font: 500 17px/1.5 Lato, sans-serif;
+      color: #777;
+  }
+
+  .black {
+    font-weight: bold;
+    color: #111;
+  }
+
+  #caption {
+    font: 500 12px/1.0 Lato, sans-serif;
+    font-style: italic;
+    color: #111;
+  }
+
+  h4 {
+      margin: 10px 0 30px 0;
+      letter-spacing: 3px;      
+      font-size: 30px;
+      color: #111;
+  }
+  .container {
+      padding: 80px 120px;
+  }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+
+
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+    }
+  }
+  .bg-1 {
+      background: #2d2d30;
+      color: #bdbdbd;
+  }
+
+  .bg-1 p {font-style: italic;}
+  .list-group-item:first-child {
+      border-top-right-radius: 0;
+      border-top-left-radius: 0;
+  }
+  .list-group-item:last-child {
+      border-bottom-right-radius: 0;
+      border-bottom-left-radius: 0;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
+
+  .modal-header, .modal-body {
+      padding: 40px 50px;
+  }
+  .nav-tabs li a {
+      color: #777;
+  }
+  #googleMap {
+      width: 100%;
+      height: 400px;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+  }  
+  .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+  }
+  .navbar li a, .navbar .navbar-brand { 
+      color: #d5d5d5 !important;
+  }
+  .navbar-nav li a:hover {
+      color: #fff !important;
+  }
+  .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+  }
+  .open .dropdown-toggle {
+      color: #fff;
+      background-color: #555 !important;
+  }
+  .dropdown-menu li a {
+      color: #000 !important;
+  }
+  .dropdown-menu li a:hover {
+      background-color: red !important;
+  }
+  footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+  }
+  footer a {
+      color: #f5f5f5;
+  }
+  footer a:hover {
+      color: #777;
+      text-decoration: none;
+  }  
+  .form-control {
+      border-radius: 0;
+  }
+  textarea {
+      resize: none;
+  }
+
+
+  </style>
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="/index.html">RODD TALEBI</a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#GTRI">GTRI</a></li>
+          <li><a href="#NCR">NCR</a></li>
+          <li><a href="#IHG">IHG</a></li>
+          <li><a href="#After6">After6</a></li>
+          <li><a href="#CityHall">City Hall</a></li>
+          <li><a href="#Asteroid">Asteroid</a></li>
+          </li>-->
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+
+
+
+
+
+
+
+
+<div class="container-fluid" style="width:100%;">
+  <div id="GTRI">
+    <div class="col-md-6">
+      <h1>Georgia Tech Research Institute</h1>
+      
+      <p>In March 2017, I started work as a Research Scientist I for the Electo-Optical Systems Labratory working in the Automated Algorithm Design Group.</p><p>Every day I go to work and have the pleasure of being challenged to perform my highest level to solve high impact problems for the United States Military but also for many private entities.</p><p>I was brought on to leverage my interdisplinary education in machine learning, physics, and mathematics, but also asked to continue as a student to further develop my skillset.</p>
+
+
+      <div>
+        <h3>GTRI</h3>
+        Well can only talk about stuff
+        <div id="list">
+          - CGP IRAD<br>
+          - ISR IRAD ... computer vision<br>
+          - ACES Radar Classification ... tensorflow<br>
+          - EMADE VIP class<br>
+        </div>
+      </div>
+      
+
+      <div>
+        <h3>NCR</h3>
+        Here is a doc made to outline steps in project to clean up saved queried tables. <a href="work/NCR/Code+Overview.html" target="_blank">doc</a>...note that this is only a preliminary draft as the final product belongs to NCR.
+        <br>
+        also make a github and post the few things done for the various projects, including the random python scripts.
+      </div>
+      
+      
+      <div>
+        <h3>Value Investing</h3>
+        well we can just link to the <a href="https://github.com/roddtalebi/ValueInvesting" target="_blank">github repo</a>
+      </div>
+
+      
+      <div>
+        <h3>IHG</h3>
+        <a href="work/IHG/Competitive Rate Insights with IHG.pdf" target="_blank">Overview Doc</a>...written for final presentation to Georgia Tech administration.
+        <br>
+        <a href="work/IHG/CompetitiveInsights.nb.html" target="_blank">SAMPLE Tool Documentation</a>...uploaded a draft because of NDA.
+        <br>
+        Upload stuff to GitHub.
+      </div>
+
+
+      <div>
+        <h3>After6</h3>
+        <a href="work/qBlu/data_strategy_v2.nb.html" target="_blank">Data Strategy Outline</a>
+        <br>
+        <a href="work/qBlu/views_impressions_guide.nb.html" target="_blank">Scoring Guideline for In-App Videos</a>
+        <br>
+        Upload maybe a few of the aws stuff to github
+      </div>
+
+
+      <div>
+        <h3>City Hall</h3>
+        Link to Mount Saint Marys <a href="https://www.msmu.edu/status-of-women-and-girls/" target="_blank">Report on the Status of Women and Girls</a> where I was acknowledged in the first ever published report for my data consulting.
+        <br>
+        Helped launch <a href="https://data.lacity.org/" target="_blank">LA Open Data Portal</a> in it's first year and help evangalize its use both internally with city departments and externally with city activists.
+        <br>
+        Also here is <a href="images/Paper.pdf" target="_blank">paper I wrote</a> on local problem that had gained a lot of attention due to the more systematized and regular efforts to collect and provide data.
+      </div>
+
+
+      <div>
+        <h3>Astroid</h3>
+        Link to <a href="https://github.com/roddtalebi/asteroid_box_line_finder" target="_blank">GitHub Repo</a>
+        <br>
+        And link to <a href="http://seti.ucla.edu/" target="_blank">SETI stuff</a>
+      </div>
+
+    </div>
+    <div id="image" class="col-md-6">
+      <center>
+      <img src="images/RoddRickCole.jpg" title="left: Rodd. right: Rick Cole">
+      <figcaption id="caption"><br>Former deputy mayor Rick Cole, current city manager of Santa Monica, and Rodd at the unveil of Mayor Eric Garcetti's <a href="https://www.lamayor.org/Sustainability-Plan" target="_blank">Sustainability Plan</a> for the City of Los Angeles.</figcaption>
+      </center>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="Rowing" class="container-fluid">
+  <div id="image" class="col-md-6">
+    <center>
+    <img src="images/rower.jpg">
+    <figcaption id="caption"><br>Rodd waiting to receive his silver medal at the 2014 Western Intercollegiate Rowing Assosication Men's Varsity 8 Grand Final.</figcaption>
+    </center>
+  </div>
+
+  <div class="col-md-6">
+    <h1>Rowing</h1>
+    <p>Maybe have a slideshow of pictures to the left instead of just a single shot</p>
+
+    <h3>Coach at Georgia Tech</h3>
+    <div id="list">
+      -maybe link to my blog
+      -placeholder link to the stats that will be done for all rowers
+    </div>
+
+    <h3>Member of FOUR</h3>
+    <div id="list">
+      -made the website<br>
+      -made young alumni thing
+    </div>
+    
+    <h3>Record with UCLA:</h3>
+    <div>
+
+      2012:
+      <div id="list">
+        UCSB - 2N8 <span class="black">Victory</span><br>
+        OCC - 2N8 Loss<br>
+        UCI - 2N8 <span class="black">Victory</span><br>
+        WIRA - <a href="https://docs.google.com/viewerng/viewer?url=http://www.row2k.com/results/files/04292012WIRAComplete-1.pdf" target="_blank">2nd place</a> to UCSD<br>
+      </div>
+      <br>
+
+      2013:
+      <div id="list">
+        UCSB - 2V8 <span class="black">Victory</span><br>
+        OCC - 2V8 <span class="black">Victory</span><br>
+        UCI - 1V8 <span class="black">Victory</span><br>
+        WIRA - <a href="http://www.row2k.com/results/files/042813WIRAv2.pdf" target="_blank">3rd place</a> to UCI (2nd), UCSB (1st)<br>
+        ACRA - <a href="https://www.americancollegiaterowing.com/Files/2013/ACRA2013Finals.pdf" target="_blank">9th place</a> with 7th fastest time<br>
+      </div>
+      <br>
+      
+      2014:
+      <div id="list">
+        UCSB - 2V8 Loss<br>
+        OCC - 2V8 <span class="black">Victory</span><br>
+        UCI - 1V8 Loss<br>
+        WIRA - <a href="https://www.regattacentral.com/regatta/results/3544_6818.pdf" target="_blank">2nd place</a> to UCSB<br>
+        ACRA - projected to place 5th or 6th but <a href="https://www.americancollegiaterowing.com/Files/2014/2014CompleteResults.pdf" target="_blank">placed 11th</a> after a costly crab in the semifinals<br>
+      </div>
+      <br>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="Projects" class="container-fluid">
+  <div class="col-md-6">
+    <h1>Project Header</h1>
+    <p>Uhh,,,words?</p>
+
+    <div id="list">
+      -fix up my car, 1996 honda accord v6<br>
+      -computer build...gpu, ssd+m.2, hackintosh<br>
+      -magic mirror build<br>
+      -secuirty system build<br>
+    </div>
+
+  </div>
+  <div id="image" class="col-md-6">
+    <center>
+    <img src="images/c.jpg">
+    </center>
+  </div>
+</div>
+
+
+
+<script>
+$(document).ready(function(){
+  // Add scrollspy to <body>
+  $('body').scrollspy({target: ".navbar", offset: 50});   
+
+  // Add smooth scrolling on all links inside the navbar
+  $("#myNavbar a").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }  // End if
+  });
+});
+</script>
+
+</body>
+</html>
