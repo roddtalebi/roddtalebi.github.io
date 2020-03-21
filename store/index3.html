@@ -426,11 +426,33 @@
 
 
   <div id="audioContainer">
-    <audio controls autoplay>
+    <audio id="myAudio" controls autoplay>
       <source src="music/fairuz.mp3" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
   </div>
+
+  <!-- script to increase volume of audio over time and pick random starting point -->
+  <script>
+    var audio = document.getElementById("myAudio");
+
+    var randnum = Math.floor(Math.random() * 60*30);
+    audio.currentTime = randnum;
+    console.log("starting point ", randnum, "sec");
+
+    var vol = 0.01;
+    audio.volume = vol
+    // now start to increase volume over time
+    var interval = 1000; // ms interval
+    var fadeout = setInterval(
+      function() {
+        if (vol < 0.15) {
+          vol += 0.01;
+          audio.volume = vol;
+          console.log("volume ", audio.volume);
+        }
+      }, interval);
+  </script>
 
   <script>
   $(document).ready(function(){
