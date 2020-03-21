@@ -1,0 +1,9 @@
+body {
+  position: relative;
+  font: 400 15px/1.8 Lato, sans-serif;
+  color: #777;
+}
+
+.container {
+    padding: 80px 120px;
+}
