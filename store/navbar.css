@@ -32,11 +32,11 @@
 }
 
 .dropdown-menu li a {
-    color: #000 !important;
+    color: #555 !important;
 }
 
 .dropdown-menu li a:hover {
-    background-color: red !important;
+    background-color: #555 !important;
 }
 /* to add the logo to the navbar, had to change the padding */
 .navbar-brand {padding: 0px; padding-left: 5px}
