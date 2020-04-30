@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My PhD Dashboard</title>
+  <meta http-equiv="description" content="PhD Research Dashboard for Rodd Talebi." />
+  <meta charset="utf-8">
+  <!-- for mobile friendly:
+    width=device-width : "part sets the width of the page to follow the screen-width of the device"
+    initial-scale=1 : "sets the initial zoom level when the page is first loaded by the browser" -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <!-- external -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- my scripts -->
+  <link rel="stylesheet" type="text/css" href="all.css">
+  <link rel="stylesheet" type="text/css" href="navbar.css">
+  <link rel="stylesheet" type="text/css" href="clothing.css">
+
+  <!-- JAVASCRIPT -->
+  <!-- external -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- my scripts -->
+  <!-- none -->
+</head>
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- this 'button' is for when the screen is collapsed into sandwich for mobile users-->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <!-- these 'icon-bars' make up the 'sandwich' image -->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                   
+        </button>
+      </div>
+      <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html#trelloEzcgp">ezCGP</a></li>
+            <li><a href="index.html#trelloPapers">PAPERS</a></li>
+            <li><a href="index.html#trelloMisc">MISC</a></li>
+            <li><a href="index.html#classes">CLASSES</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- not sure what to put here...just an intro to the page somehow -->
+  <div id="intro">
+    <h1>My PhD Dashboard</h1>
+  </div>
+
+
+  <!-- first trello board -->
+  <div id="trelloEzcgp" class="container-fluid" style="width:100%; padding-top:50px;">
+    <div>
+      <h2>Trello Board - ezCGP </h2>
+    </div>
+    <div>
+      <script src="https://trello.com/b/2v0YS49a.js"></script>
+    </div>
+    <div>
+      <h3>Notes</h3>
+    </div>
+  </div>
+
+  <!-- second trello board -->
+  <div id="trelloPapers" class="container-fluid" style="width:100%; padding-top:50px;">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div>
+        <h2>Trello Board - Research Papers </h2>
+      </div>
+      <div style=" position:relative; display:block; width: 100%; height: 600px">
+        <iframe src="https://trello.com/b/2v0YS49a.html" scrolling="no" frameborder="0" width="100%" height="600px" style="position:absolute; top:0; left: 0"></iframe>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+
+  <!-- third trello board -->
+  <div id="trelloMisc" class="container-fluid" style="width:100%; padding-top:50px; padding-left: 50px; padding-right: 50px;">
+    <div>
+      <h2>Trello Board - Misc </h2>
+    </div>
+    <div style=" position:relative; display:block; width: 100%; height: 600px">
+      <iframe src="https://trello.com/b/2v0YS49a.html" scrolling="no" frameborder="0" width="100%" height="600px" style="position:absolute; top:0; left: 0"></iframe>
+    </div>
+  </div>
+
+  <!-- Classes I've taken -->
+  <div id="classes" class="container-fluid" style="width:100%; padding-top:50px;">
+    <div>
+      <h2>Curriculum</h2>
+    </div>
+    <div>
+
+      <div>
+        <h4><a href="https://ml.gatech.edu/curriculum/core">Core Classes</a></h4>
+        <p>Machine Learning PhD students will be required to complete courses in five different areas: Mathematical Foundations, Intermediate Statistics, ML Theory and Methods, Data Models, and Optimization.</p>
+        <ol>
+          <li>
+            <b>Mathematical Foundations of Machine Learning</b><br>Fall 2018 - ISyE 8843
+          </li>
+          <li>
+            <b>Intermediate Statistics</b>:<br>ISyE 6412 - Fall 2019
+          </li>
+          <li>
+            <b>Machine Learning Theory and Methods</b><br>ISyE 6740 - Spring 2016
+          </li>
+          <li>
+            <b>Probabilistic Graphical Models</b><br>ISyE 8803 - Spring 2020
+          </li>
+          <li>
+            <b>Optimization</b><br>ISyE 6669 - Fall 2015
+          </li>
+        </ol>
+      </div>
+
+      <div>
+        <h4><a href="https://ml.gatech.edu/curriculum/electives">Area electives</a></h4>
+        <p>In addition to meeting the five core area requirements, each student is required to complete five elective courses.  These courses are required for getting a complete breadth in ML. These courses must be chosen from at least two of the following five subject areas: Statistics and Applied Probability, Advanced Theory, Applications, Computing and Optimization, and Platforms. In addition, students can use up to six special topics research hours towards this requirement.</p>
+        <ol type='i'>
+          <li><b>Statistics and Applied Probability</b>
+            <ol>
+              <li>ISyE 6414 - Fall 2015</li>
+              <li>ISyE 6420 - Spring 2016</li>
+            </ol>
+          </li>
+          <li><b>Advanced Theory</b>
+          </li>
+          <li><b>Applications</b>
+            <ol start="3">
+              <li>CSE 6242 - Spring 2016</li>
+            </ol>
+          </li>
+          <li><b>Computing and Optimization</b>
+            <ol start="4">
+              <li>ISyE 6645 - Fall 2019</li>
+            </ol>
+          </li>
+          <li><b>Platforms</b>
+          </li>
+          <li><b>Special Topics</b>
+            <ol start="5">
+              <li>VIP 6603 - Fall 2019</li>
+            </ol>
+          </li>
+        </ol>
+      </div>
+
+      <div>
+        <h4>Responsible Conduct of Research</h4>
+        <p>Georgia Tech requires that all PhD students complete an RCR requirement that consists of an online component and in-person training. The online component is completed during the student’s first semester enrolled at Georgia Tech.  The in-person training is satisfied by taking PHIL 6000 or their associated academic program’s in-house RCR course.</p>
+        <ul>
+          <li>Phil 6000 - Spring 2019</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Doctoral Minor</h4>
+        <p>The minor follows the standard Georgia Tech requirement: 9 hours outside the student’s home unit, with a GPA in those courses of at least 3.0.  These courses are in addition to the other core and elective requirements.  The courses for the minor should form a cohesive program of study, outside the area of ML, that is approved by the Faculty Advisory Committee.  Typical programs will consist of three courses from the same school (any school at the Institute) or three courses from the same elective area.</p>
+        <ol>
+          <b><u>Business Analytics Minor</u></b>
+          <li><b>Intro to Business for Analytics</b>: Mgt 8803 - Fall 2015</li>
+          <li><b>Big Data Analytics in Business</b>: Mgt 8803 - Spring 2015</li>
+          <li><b>Computing for Data Analytics</b>: CSE 6040 - Fall 2015</li>
+        </ol>
+      </div>
+
+      <div>
+        <h4><a href="https://ml.gatech.edu/content/curriculum-phd-dissertation">Qualifying examination</a></h4>
+        <ul>
+          <li>suh</li>
+        </ul>
+      </div>
+
+
+    </div>
+  </div>
+
+
+</body>

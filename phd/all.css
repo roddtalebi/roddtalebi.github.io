@@ -1,0 +1,10 @@
+body {
+  position: relative;
+  font: 400 15px/1.8 Lato, sans-serif;
+  color: #777;
+  padding-top: 50px; /* navbar takes up 50px at top*/
+}
+
+.container {
+    padding: 80px 120px;
+}
