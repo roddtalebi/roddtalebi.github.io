@@ -8,3 +8,27 @@ body {
 .container {
     padding: 80px 120px;
 }
+
+
+.page-title {
+ padding: 5em 0em 0em 0em;
+}
+
+
+/* edit the container-fluid class to */
+.body-div {
+ width: 100%;
+ padding-top: 5em;
+}
+
+.trello {
+ padding: 1em 2em 1em 2em; /*-- top right bottom left*/
+ position: relative;
+ display: block;
+ width: 100%;
+ height: 700px
+}
+
+.sub-curriculum {
+ padding: 1em 1em 1em 1em;
+}
