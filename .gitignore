@@ -3,6 +3,9 @@
 #scripts/driveAPI/
 #scripts/cronjob/
 
+# ignore py script in info
+info/*.py
+
 #ignore anything in php
 .php
 .sh
