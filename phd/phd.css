@@ -67,6 +67,10 @@ footer {
  height: 700px
 }
 
+.sub-quicklinks {
+ padding: 1em 1em 1em 2em;
+}
+
 .sub-curriculum {
  padding: 1em 1em 1em 1em;
 }
