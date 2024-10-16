@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Our Tucson Home</title>
+  <meta http-equiv="description" content="Home Projects Dashboard." />
+  <meta charset="utf-8">
+  <!-- for mobile friendly:
+    width=device-width : "part sets the width of the page to follow the screen-width of the device"
+    initial-scale=1 : "sets the initial zoom level when the page is first loaded by the browser" -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <!-- external -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- my scripts -->
+  <link rel="stylesheet" type="text/css" href="phd.css">
+  <link rel="stylesheet" type="text/css" href="phd_navbar.css">
+
+  <!-- JAVASCRIPT -->
+  <!-- external -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- my scripts -->
+  <!-- none -->
+</head>
+
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <!-- this 'button' is for when the screen is collapsed into sandwich for mobile users-->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <!-- these 'icon-bars' make up the 'sandwich' image -->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                   
+        </button>
+        <a class="navbar-brand" href="#">TOP</a>
+      </div>
+      <div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#trelloHomeReno">HOME RENO</a></li>
+            <li><a href="#quickLinks">LINKS</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- not sure what to put here...just an intro to the page somehow -->
+  <div id="intro" class="page-title">
+    <center>
+      <h1><u><b>Our Tucson Home - Name Pending</b></u></h1>
+    </center>
+  </div>
+
+
+  <div class="container-fluid body-div">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
+      <center>
+        <button class="btn btn-color" onclick="window.open('https://drive.google.com/drive/folders/1izT5zyTmpDMQN1zlO-cS0obXStM3F1H_?usp=sharing')">
+          <b>Google Drive</b>
+        </button>
+        <button class="btn btn-color" onclick="window.open('https://gis.pima.gov/maps/detail.cfm?parcel=214414380')">
+          <b>Pima County</b>
+        </button>
+        <button class="btn btn-color" onclick="window.open('https://pimamaps.pima.gov/HtmlPubViewer/index.html?configBase=https://pimamaps.pima.gov/Geocortex/Essentials/PublicPM/REST/sites/mainsite/viewers/mainmap/virtualdirectory/Resources/Config/Default&layerName=Parcels&zExtent=1&query=parcel%3D%27214414380%27&fSelect=Y&layerName2=Parcel%20Addresses%20%28points%29&layerMapServiceId=primarysource-10&runWorkflow=primarysource-UrlQuery')">
+          <b>Pima Maps</b>
+        </button>
+
+      </center>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+
+
+
+  <!-- trello board -->
+  <div id="trelloHomeReno" class="container-fluid body-div">
+    <div class="col-md-10">
+      <div>
+        <h2>Home Renovation Projects</h2>
+      </div>
+      <div class="trello-div">
+        <!--<script src="https://trello.com/b/2v0YS49a.js"></script>-->
+        <iframe src="https://trello.com/b/mnBMp8Vg.html" scrolling="no" frameborder="0" width="100%" height="750px"></iframe>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+
+
+
+  <div id="quickLinks" class="container-fluid body-div">
+    <div class="quicklinks-div">
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="https://www.google.com" target="_blank">Link</a> to something</li>
+        <li><a href="https://www.google.com" target="_blank">Link</a> to another thing.</li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div id="image" class="container-fluid body-div">
+    <div class="image-div">
+      <center>
+      <img src="./images/PlotMap_435.jpg" title="Plot 435 test">
+      <figcaption id="caption"><br>Original Plot Map with our Plot 435</figcaption>
+      </center>
+    </div>
+  </div>
+
+
+  <!-- OLD STUFF
+  <div id="classes" class="container-fluid body-div" style="padding-left: 3em">
+    <div>
+      <h2>Curriculum</h2>
+      <p><b>NOTE</b> On July 22, 2020 the ML PhD curriculum requirements were slightly modified. In a follow up email on Aug. 3, 2020, it was made clear tht "current students (any student entering 202002 or prior) have the option to remain on the previous curriculum in the catalog year that they entered, or may choose to follow the new curriculum (catalog year 202005)."</p>
+      <p>Because of this, below, where appropriate, I'll try to link to old versions of the curriculum instead of what is live right now<p>
+    </div>
+
+    <div class="sub-curriculum">
+      <h4><a href="https://web.archive.org/web/20200224153350/https://ml.gatech.edu/curriculum/core" target="_blank">Core Classes</a></h4>
+      <p>Machine Learning PhD students will be required to complete courses in five different areas: Mathematical Foundations, Intermediate Statistics, ML Theory and Methods, Data Models, and Optimization.</p>
+      <ol>
+        <li>
+          <b>Mathematical Foundations of Machine Learning</b><br>Fall 2018 - ISyE 8843
+        </li>
+        <li>
+          <b>Intermediate Statistics</b>:<br>ISyE 6412 - Fall 2019
+        </li>
+        <li>
+          <b>Machine Learning Theory and Methods</b><br>ISyE 6740 - Spring 2016
+        </li>
+        <li>
+          <b>Probabilistic Graphical Models</b><br>ISyE 8803 - Spring 2020
+        </li>
+        <li>
+          <b>Optimization</b><br>ISyE 6669 - Fall 2015
+        </li>
+      </ol>
+    </div>
+
+    <div class="sub-curriculum">
+      <h4><a href="https://web.archive.org/web/20200224230038/https://ml.gatech.edu/curriculum/electives" target="_blank">Area electives</a></h4>
+      <p>In addition to meeting the five core area requirements, each student is required to complete five elective courses.  These courses are required for getting a complete breadth in ML. These courses must be chosen from at least two of the following five subject areas: Statistics and Applied Probability, Advanced Theory, Applications, Computing and Optimization, and Platforms. In addition, students can use up to six special topics research hours towards this requirement.</p>
+      <ol type='i'>
+        <li><b>Statistics and Applied Probability</b>
+          <ol>
+            <li>ISyE 6414 - Fall 2015</li>
+            <li>ISyE 6420 - Spring 2016</li>
+          </ol>
+        </li>
+        <li><b>Advanced Theory</b>
+        </li>
+        <li><b>Applications</b>
+          <ol start="3">
+            <li>CSE 6242 - Spring 2016</li>
+          </ol>
+        </li>
+        <li><b>Computing and Optimization</b>
+          <ol start="4">
+            <li>ISyE 6645 - Fall 2019</li>
+          </ol>
+        </li>
+        <li><b>Platforms</b>
+        </li>
+        <li><b>Special Topics</b>
+          <ol start="5">
+            <li>VIP 6603 - Fall 2019<br><i>NOTE: Jan. 25, 2021, Stephanie Niebuhr confirmed that this counts as an elective.</i></li>
+          </ol>
+        </li>
+      </ol>
+    </div>
+
+    <div class="sub-curriculum">
+      <h4>Responsible Conduct of Research</h4>
+      <p>Georgia Tech requires that all PhD students complete an RCR requirement that consists of an online component and in-person training. The online component is completed during the student’s first semester enrolled at Georgia Tech.  The in-person training is satisfied by taking PHIL 6000 or their associated academic program’s in-house RCR course.</p>
+      <ul>
+        <li>Phil 6000 - Spring 2019</li>
+      </ul>
+    </div>
+
+    <div class="sub-curriculum">
+      <h4>Doctoral Minor</h4>
+      <p>The minor follows the standard Georgia Tech requirement: 9 hours outside the student’s home unit, with a GPA in those courses of at least 3.0.  These courses are in addition to the other core and elective requirements.  The courses for the minor should form a cohesive program of study, outside the area of ML, that is approved by the Faculty Advisory Committee.  Typical programs will consist of three courses from the same school (any school at the Institute) or three courses from the same elective area.</p>
+
+      <p><b>UPDATE</b> Oct. 17, 2019: ML PhD Academic Advisor Stephanie Niebuhr said the following to me in an email inquiry about the process for approving a minor...<br>
+      <blockquote>For the minor, your faculty advisor should approve which 3 courses should form your minor of study.  There is a form through grad studies that must be signed by your faculty advisor and then you will be sent to me for approval: <a href="https://grad.gatech.edu/sites/default/files/documents/doctoral_minor_form.pdf">LINK</a>. <b>This is not completed until after the thesis is approved</b>, so there is no need to complete the form now, but you should talk to your advisor about it if you haven't already. As long as they are outside of your home school, not in the ML curriculum, and are a cohesive topic, then it should be fine with faculty advisor approval.</blockquote></p>
+
+      <ol>
+        <b><u>Business Analytics Minor</u></b>**
+        <li>Intro to Business for Analytics: Mgt 8803 - Fall 2015</li>
+        <li>Big Data Analytics in Business: Mgt 8803 - Spring 2015</li>
+        <li>Computing for Data Analytics: CSE 6040 - Fall 2015</li>
+      </ol>
+    </div>
+
+    <div class="sub-curriculum">
+      <h4><a href="https://ml.gatech.edu/content/curriculum-phd-dissertation" target="_blank">Qualifying examination</a></h4>
+      <p>The Ph.D. qualifying exam consists of a focused literature review that will take place over the course of one semester. At the beginning of the second semester of their second year, a qualifying committee consisting of three members of the ML faculty will assign, in consultation with the student and the student’s advisor, a course of study consisting of influential papers, books, or other intellectual artifacts relevant to the student’s research interests. The student’s focus area and current research efforts (and related portfolio) will be considered in defining the course of study.</p>
+      <p>At the end of the semester, the student will submit a written report the demonstrates their understanding of both the technical content and the context of each artifact.  Subsequently, the student will have a closed oral exam with the three members of the committee.The exam will be interactive, with the student and the committee discussing and criticizing each work and posing questions related to the student's current research to determine the breadth of student’s knowledge in that specific area.<p>
+      <ul>
+        <li>CS 7999 - <b>[anticipated]</b> Fall 2021: <i>To receive a permit, please contact ML Academic Advisor, Stephanie Niebuhr at stephanie.niebuhr@cc.gatech.edu</i></li>
+      </ul>
+    </div>
+
+
+    </div>
+    <div class="sub-curriculum" style="padding-left: 100px">
+      **<i>pending official approval</i>
+    </div>
+  </div>
+-->
+
+
+</body>
