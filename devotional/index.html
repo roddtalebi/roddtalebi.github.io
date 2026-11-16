@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Next Event</title>
+  <style>
+    body { font-family: system-ui, sans-serif; text-align: center; padding: 50px; }
+    .event-box { border: 2px solid #333; padding: 20px; border-radius: 8px; display: inline-block; }
+  </style>
+</head>
+<body>
+
+  <div class="event-box">
+    <h2>Next Upcoming Event:</h2>
+    <p id="next-event">Loading...</p>
+  </div>
+
+  <script>
+    const csvUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vR6Gt6swhnyJx1ZQg3UlZpLpxP4nnb-Woq4g9jYIbqumUWcvqIcirsGY9YQMuvhM4rVhL7kCguOLRPW/pub?gid=0&single=true&output=csv';
+
+    fetch(csvUrl)
+      .then(response => response.text())
+      .then(data => {
+        const rows = data.split('\n').slice(1); // Remove header row
+        const now = new Date();
+        let upcomingEvents = [];
+
+        rows.forEach(row => {
+          const [dateStr, eventName] = row.split(',');
+          if (dateStr && eventName) {
+            const eventDate = new Date(dateStr.trim());
+            if (eventDate >= now) {
+              upcomingEvents.push({ date: eventDate, name: eventName.trim() });
+            }
+          }
+        });
+
+        // Sort chronologically to find the closest one
+        upcomingEvents.sort((a, b) => a.date - b.date);
+
+        const display = document.getElementById('next-event');
+        if (upcomingEvents.length > 0) {
+          const next = upcomingEvents[0];
+          display.innerHTML = `<strong>${next.name}</strong><br>${next.date.toDateString()}`;
+        } else {
+          display.textContent = 'No upcoming events scheduled.';
+        }
+      })
+      .catch(error => {
+        document.getElementById('next-event').textContent = 'Error loading events.';
+      });
+  </script>
+
+</body>
+</html>
